@@ -1,0 +1,3 @@
+NervesMOTD.print()
+
+use Toolshed
