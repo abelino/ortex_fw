@@ -29,6 +29,8 @@ defmodule OrtexFirmware.MixProject do
     [
       # Dependencies for all targets
       {:nerves, "~> 1.10", runtime: false},
+      {:nx, "~> 0.9"},
+      {:ortex, "~> 0.1"},
       {:shoehorn, "~> 0.9.1"},
       {:ring_logger, "~> 0.11.0"},
       {:toolshed, "~> 0.4.0"},

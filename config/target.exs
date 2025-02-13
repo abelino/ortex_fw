@@ -1,5 +1,13 @@
 import Config
 
+config :ortex, Ortex.Native,
+  target: "aarch64-unknown-linux-gnu",
+  env: [
+    {"CC", ""},
+    {"CFLAGS", ""},
+    {"CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER", "aarch64-nerves-linux-gnu-gcc"}
+  ]
+
 config :logger, backends: [RingLogger]
 
 config :shoehorn, init: [:nerves_runtime, :nerves_pack]
